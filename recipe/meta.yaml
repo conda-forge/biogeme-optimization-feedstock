@@ -23,7 +23,7 @@ requirements:
     - python >=3.7
     - numpy
     - scipy >=1.14.0
-    - matplotlib-base >=3.9.0
+    - matplotlib-base >=3.8.4
     - tomlkit >=0.12.5
 
 test:
