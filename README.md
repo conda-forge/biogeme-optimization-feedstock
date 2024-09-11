@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@FGarridoV](https://github.com/FGarridoV/)
+* [@sandervancranenburgh](https://github.com/sandervancranenburgh/)
 
