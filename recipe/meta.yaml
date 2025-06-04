@@ -1,5 +1,5 @@
 {% set name = "biogeme-optimization" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biogeme_optimization-{{ version }}.tar.gz
-  sha256: a4e964d034208eb762217556112369d9f8f7dfeabe603a2dde360bca50031fca
+  sha256: 1d503fdd227162d9bf74f4290e66ff01a314c97793983fb73c84e49855b5445d
   patches:
     - pyproject.toml.patch
 
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.7
     - numpy
-    - scipy >=1.14.0
+    - scipy >=1.15.2
     - matplotlib-base >=3.8.4
     - tomlkit >=0.12.5
 
