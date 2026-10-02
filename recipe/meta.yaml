@@ -1,20 +1,20 @@
 {% set name = "biogeme-optimization" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.14" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biogeme_optimization-{{ version }}.tar.gz
-  sha256: 1d503fdd227162d9bf74f4290e66ff01a314c97793983fb73c84e49855b5445d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/biogeme_optimization-{{ version }}.tar.gz
+  sha256: 9be0b1e2de0bf52b45bc05bdbb2d6bbc14849a4217724db2c902dc6f22561c81
   patches:
     - pyproject.toml.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
